@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Game } from '../types';
 import { ArrowRight, Sparkles, Smartphone, CheckCircle, ExternalLink, Eye } from 'lucide-react';
+import { trackOutboundClick } from '../utils/analytics';
 
 interface FeaturedGameProps {
   game: Game;
@@ -11,6 +12,7 @@ export const FeaturedGame: React.FC<FeaturedGameProps> = ({ game, onOpenDetails 
   const [selectedScreenshotIndex, setSelectedScreenshotIndex] = useState(0);
 
   const handlePlayClick = () => {
+    trackOutboundClick(game.title, game.googlePlayUrl, 'google_play');
     if (game.googlePlayUrl && !game.googlePlayUrl.startsWith('[')) {
       window.open(game.googlePlayUrl, '_blank', 'noopener,noreferrer');
     } else {

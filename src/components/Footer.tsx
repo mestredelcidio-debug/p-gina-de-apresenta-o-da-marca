@@ -2,7 +2,7 @@ import React from 'react';
 import { BrandInfo } from '../types';
 import { Shield, Sparkles, Gamepad2 } from 'lucide-react';
 import { BrandName } from './BrandName';
-import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
+import decixEmblemSvg from '../assets/images/decix_gamers_emblem.svg';
 
 interface FooterProps {
   brand: BrandInfo;
@@ -27,18 +27,18 @@ export const Footer: React.FC<FooterProps> = ({ brand, onNavigate }) => {
               onClick={(e) => handleNav(e, '/')}
               className="inline-flex items-center gap-3 group"
             >
-              <div className="h-10 w-10 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-md shadow-red-600/30 group-hover:scale-105 transition-transform duration-300">
+              <div className="h-10 w-10 rounded-xl overflow-hidden border border-cyan-400/50 bg-black shadow-md shadow-cyan-600/30 group-hover:scale-105 transition-transform duration-300">
                 <img
-                  src={delxusEmblemSvg}
-                  alt="Logotipo oficial DELXUS"
+                  src={decixEmblemSvg}
+                  alt="Logotipo oficial DECIX GAMERS"
                   className="h-full w-full object-contain"
                 />
               </div>
               <BrandName className="text-2xl font-display font-extrabold tracking-wider">
-                DELXUS
+                DECIX GAMERS
               </BrandName>
             </a>
-            <p className="text-sm font-medium text-red-400 tracking-wide uppercase">
+            <p className="text-sm font-medium text-cyan-400 tracking-wide uppercase">
               {brand.tagline}
             </p>
             <p className="text-sm text-slate-400 max-w-md leading-relaxed">
@@ -80,7 +80,7 @@ export const Footer: React.FC<FooterProps> = ({ brand, onNavigate }) => {
                   onClick={(e) => handleNav(e, '/sobre')}
                   className="hover:text-cyan-400 transition-colors"
                 >
-                  Sobre a DELXUS
+                  Sobre a DECIX GAMERS
                 </a>
               </li>
               <li>

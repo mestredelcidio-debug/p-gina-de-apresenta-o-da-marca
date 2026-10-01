@@ -2,7 +2,7 @@ import React from 'react';
 import { BrandInfo } from '../types';
 import { Shield, ArrowLeft, Lock, FileText, CheckCircle, Mail } from 'lucide-react';
 import { BrandName } from './BrandName';
-import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
+import decixEmblemSvg from '../assets/images/decix_gamers_emblem.svg';
 
 interface PrivacyPolicyPageProps {
   brand: BrandInfo;
@@ -27,15 +27,15 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ brand, onB
         {/* Page Header */}
         <div className="border-b border-white/10 pb-8 mb-10">
           <div className="flex items-center gap-3 mb-4">
-            <div className="h-12 w-12 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-lg shadow-red-950/40 shrink-0">
+            <div className="h-12 w-12 rounded-xl overflow-hidden border border-cyan-400/50 bg-black shadow-lg shadow-cyan-950/50 shrink-0 p-1">
               <img
-                src={delxusEmblemSvg}
-                alt="Logotipo oficial DELXUS"
+                src={decixEmblemSvg}
+                alt="Logotipo oficial DECIX GAMERS"
                 className="h-full w-full object-contain"
               />
             </div>
             <div>
-              <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-red-400">
+              <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-cyan-400">
                 <Shield className="h-3.5 w-3.5" />
                 <span>Documento Oficial</span>
               </div>
@@ -58,11 +58,11 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ brand, onB
         </div>
 
         {/* Informative Banner */}
-        <div className="p-4 rounded-xl border border-red-500/20 bg-red-950/10 mb-10 text-xs text-slate-300 leading-relaxed flex items-start gap-3">
-          <Lock className="h-4 w-4 text-red-400 shrink-0 mt-0.5" />
+        <div className="p-4 rounded-xl border border-cyan-500/20 bg-cyan-950/10 mb-10 text-xs text-slate-300 leading-relaxed flex items-start gap-3">
+          <Lock className="h-4 w-4 text-cyan-400 shrink-0 mt-0.5" />
           <p>
             Esta política foi redigida para atender às diretrizes do Google Play e aos princípios de
-            transparência digital. Campos entre colchetes como <code className="text-red-300 font-mono">[EXEMPLO]</code> indicam parâmetros específicos que o estúdio <BrandName className="text-xs">DELXUS</BrandName> pode ajustar de acordo com os SDKs e parceiros integrados aos seus jogos.
+            transparência digital. Campos entre colchetes como <code className="text-cyan-300 font-mono">[EXEMPLO]</code> indicam parâmetros específicos que o estúdio <BrandName className="text-xs">DECIX GAMERS</BrandName> pode ajustar de acordo com os SDKs e parceiros integrados aos seus jogos.
           </p>
         </div>
 
@@ -71,11 +71,11 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ brand, onB
           {/* 1. Introdução */}
           <section className="space-y-3">
             <h2 className="font-display text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
-              <span className="text-red-400 font-mono text-base">01.</span>
+              <span className="text-cyan-400 font-mono text-base">01.</span>
               <span>Introdução</span>
             </h2>
             <p>
-              A <BrandName>DELXUS</BrandName> tem o compromisso de proteger a privacidade e os dados
+              A <BrandName>DECIX GAMERS</BrandName> tem o compromisso de proteger a privacidade e os dados
               pessoais de todos os usuários que interagem com nossos jogos digitais, aplicativos móveis
               e páginas institucionais. Esta Política de Privacidade descreve de maneira transparente
               como tratamos as informações no âmbito de nossas atividades.
@@ -85,26 +85,26 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ brand, onB
           {/* 2. Quem somos */}
           <section className="space-y-3">
             <h2 className="font-display text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
-              <span className="text-red-400 font-mono text-base">02.</span>
+              <span className="text-cyan-400 font-mono text-base">02.</span>
               <span>Quem Somos</span>
             </h2>
             <p>
-              A <BrandName>DELXUS</BrandName> é uma marca independente de desenvolvimento de jogos
+              A <BrandName>DECIX GAMERS</BrandName> é uma marca independente de desenvolvimento de jogos
               digitais focada na criação de experiências de entretenimento móvel para a plataforma
               Android e outros meios digitais. Para quaisquer questões relativas a esta política,
               disponibilizamos o canal de contato dedicado em:{' '}
-              <span className="font-mono text-red-400 font-semibold">{brand.privacyEmail}</span>.
+              <span className="font-mono text-cyan-400 font-semibold">{brand.privacyEmail}</span>.
             </p>
           </section>
 
           {/* 3. Informações que podem ser coletadas */}
           <section className="space-y-3">
             <h2 className="font-display text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
-              <span className="text-red-400 font-mono text-base">03.</span>
+              <span className="text-cyan-400 font-mono text-base">03.</span>
               <span>Informações que Podem Ser Coletadas</span>
             </h2>
             <p>
-              A <BrandName>DELXUS</BrandName> prioriza jogos que funcionem sem a necessidade de cadastros invasivos. As
+              A <BrandName>DECIX GAMERS</BrandName> prioriza jogos que funcionem sem a necessidade de cadastros invasivos. As
               informações potencialmente processadas dividem-se em:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-sm text-slate-300">
@@ -153,7 +153,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ brand, onB
               <span>Compartilhamento de Informações</span>
             </h2>
             <p>
-              A DELXUS não comercializa, vende ou aluga dados pessoais de usuários. As informações
+              A DECIX GAMERS não comercializa, vende ou aluga dados pessoais de usuários. As informações
               podem ser compartilhadas estritamente com provedores de infraestrutura essenciais (Google
               Play Services, redes de publicidade autorizadas e serviços de análise de dados), ou quando
               exigido por lei ou determinação judicial aplicável.
@@ -262,7 +262,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ brand, onB
               <span>Privacidade de Crianças</span>
             </h2>
             <p>
-              A DELXUS preza pela segurança dos jovens jogadores e cumpre as normas da política familiar
+              A DECIX GAMERS preza pela segurança dos jovens jogadores e cumpre as normas da política familiar
               da Google Play Store e legislações aplicáveis. Nossos jogos casuais não solicitam
               proativamente dados de identificação de menores. Se tomarmos conhecimento de coleta
               involuntária de dados de menores sem consentimento cabível, adotaremos medidas imediatas
@@ -290,7 +290,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ brand, onB
               <span>Alterações nesta Política de Privacidade</span>
             </h2>
             <p>
-              A DELXUS poderá atualizar esta Política periodicamente para refletir mudanças em nossos
+              A DECIX GAMERS poderá atualizar esta Política periodicamente para refletir mudanças em nossos
               jogos, novos lançamentos ou exigências legais. A data da versão mais recente estará sempre
               destacada no início deste documento.
             </p>
@@ -304,7 +304,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ brand, onB
             </h2>
             <p className="text-sm text-slate-300">
               Para esclarecer dúvidas, exercer seus direitos ou tratar de qualquer assunto relacionado à
-              privacidade de dados na DELXUS, entre em contato através do nosso endereço eletrônico:
+              privacidade de dados na DECIX GAMERS, entre em contato através do nosso endereço eletrônico:
             </p>
             <div className="pt-2 flex items-center gap-3 text-cyan-400">
               <Mail className="h-5 w-5" />
@@ -313,7 +313,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ brand, onB
               </span>
             </div>
             <p className="text-xs text-slate-400 pt-1 font-mono">
-              Responsável pelo tratamento de dados: Equipe de Privacidade DELXUS
+              Responsável pelo tratamento de dados: Equipe de Privacidade DECIX GAMERS
             </p>
           </section>
         </div>

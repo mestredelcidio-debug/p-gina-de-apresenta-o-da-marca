@@ -2,7 +2,7 @@ import React from 'react';
 import { Lightbulb, Smile, Cpu, Sparkles, Target, Compass, Layers, CheckCircle2 } from 'lucide-react';
 import { BrandInfo } from '../types';
 import { BrandName } from './BrandName';
-import delxusLogoSvg from '../assets/images/delxus_logo_original.svg';
+import decixLogoSvg from '../assets/images/decix_gamers_logo.svg';
 
 interface AboutSectionProps {
   brand: BrandInfo;
@@ -58,21 +58,21 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ brand }) => {
   return (
     <section id="sobre" className="relative py-24 bg-[#0A0D15] border-t border-white/5 overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Section 1: Por trás da DELXUS */}
+        {/* Section 1: Por trás da DECIX GAMERS */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-red-400">
+            <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-cyan-400">
               <Compass className="h-4 w-4" />
               <span>Identidade & Propósito</span>
             </div>
 
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
-              POR TRÁS DA <BrandName>DELXUS</BrandName>
+              POR TRÁS DA <BrandName>DECIX GAMERS</BrandName>
             </h2>
 
             <div className="space-y-4 text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
               <p>
-                A <BrandName>DELXUS</BrandName> nasceu com uma ideia simples: criar jogos que sejam fáceis de começar,
+                A <BrandName>DECIX GAMERS</BrandName> nasceu com uma ideia simples: criar jogos que sejam fáceis de começar,
                 divertidos de jogar e capazes de conquistar o jogador ao longo do tempo.
               </p>
               <p>
@@ -86,11 +86,11 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ brand }) => {
             </div>
 
             {/* Logo feature banner */}
-            <div className="p-4 rounded-xl border border-red-500/20 bg-gradient-to-r from-red-950/30 via-black/40 to-transparent flex items-center gap-4">
-              <div className="h-16 w-16 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-lg shadow-red-900/30 shrink-0 p-1">
+            <div className="p-4 rounded-xl border border-cyan-500/30 bg-gradient-to-r from-cyan-950/40 via-black/50 to-transparent flex items-center gap-4 shadow-lg shadow-cyan-950/30">
+              <div className="h-16 w-16 rounded-xl overflow-hidden border border-cyan-400/50 bg-black shadow-lg shadow-cyan-900/40 shrink-0 p-1">
                 <img
-                  src={delxusLogoSvg}
-                  alt="Logotipo oficial da marca DELXUS"
+                  src={decixLogoSvg}
+                  alt="Logotipo oficial da marca DECIX GAMERS"
                   className="h-full w-full object-contain"
                 />
               </div>
@@ -98,8 +98,8 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ brand }) => {
                 <span className="block font-display font-bold text-white uppercase tracking-wider">
                   Logotipo Oficial da Marca
                 </span>
-                <span className="text-slate-400">
-                  O emblema flamejante original simboliza a paixão, energia e determinação da <BrandName className="text-xs">DELXUS</BrandName> em cada projeto.
+                <span className="text-slate-300">
+                  O emblemático quebra-cabeça com letras <BrandName className="text-xs">DECIX GAMERS</BrandName>, palavras cruzadas, caça-palavras e lupa simboliza nossa dedicação a jogos inteligentes, instigantes e divertidos.
                 </span>
               </div>
             </div>
@@ -128,7 +128,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ brand }) => {
                     {principle.description}
                   </p>
                   <span className="mt-3 block text-[10px] uppercase font-semibold text-slate-400 tracking-wider">
-                    Princípio <BrandName className="text-[10px]">DELXUS</BrandName>
+                    Princípio <BrandName className="text-[10px]">DECIX GAMERS</BrandName>
                   </span>
                 </div>
               );
@@ -139,8 +139,8 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ brand }) => {
         {/* Section 2: Nossa Missão & Para onde estamos indo */}
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 pt-12 border-t border-white/10">
           {/* Missão */}
-          <div className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 relative group hover:border-red-500/30 transition-colors">
-            <div className="flex items-center gap-3 text-red-400 mb-4">
+          <div className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 relative group hover:border-cyan-500/30 transition-colors">
+            <div className="flex items-center gap-3 text-cyan-400 mb-4">
               <Target className="h-5 w-5" />
               <span className="text-xs font-bold uppercase tracking-wider">Compromisso</span>
             </div>
@@ -153,8 +153,8 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ brand }) => {
           </div>
 
           {/* Visão */}
-          <div className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 relative group hover:border-amber-500/30 transition-colors">
-            <div className="flex items-center gap-3 text-amber-400 mb-4">
+          <div className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 relative group hover:border-sky-500/30 transition-colors">
+            <div className="flex items-center gap-3 text-sky-400 mb-4">
               <Layers className="h-5 w-5" />
               <span className="text-xs font-bold uppercase tracking-wider">Trajetória</span>
             </div>
@@ -162,7 +162,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ brand }) => {
               Para onde estamos indo
             </h3>
             <p className="text-slate-300 text-base leading-relaxed">
-              A <BrandName>DELXUS</BrandName> busca crescer continuamente como marca de jogos digitais, desenvolvendo novos projetos, explorando diferentes ideias e construindo experiências cada vez melhores para seus jogadores.
+              A <BrandName>DECIX GAMERS</BrandName> busca crescer continuamente como marca de jogos digitais, desenvolvendo novos projetos, explorando diferentes ideias e construindo experiências cada vez melhores para seus jogadores.
             </p>
           </div>
         </div>
@@ -170,7 +170,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ brand }) => {
         {/* Section 3: Nossos Valores */}
         <div className="mt-20 pt-12 border-t border-white/10">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-widest text-red-400">
+            <span className="text-xs font-bold uppercase tracking-widest text-cyan-400">
               Pilares Fundamentais
             </span>
             <h3 className="font-display text-3xl font-extrabold text-white mt-2">

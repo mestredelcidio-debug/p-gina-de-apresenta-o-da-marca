@@ -31,7 +31,7 @@ export const NewsSection: React.FC<NewsSectionProps> = ({ news }) => {
               ÚLTIMAS NOVIDADES
             </h2>
             <p className="mt-2 text-base text-slate-300 max-w-2xl">
-              Fique por dentro dos novos lançamentos, atualizações de jogos e marcos da <BrandName>DELXUS</BrandName>.
+              Fique por dentro dos novos lançamentos, atualizações de jogos e marcos da <BrandName>DECIX GAMERS</BrandName>.
             </p>
           </div>
 
@@ -92,9 +92,9 @@ export const NewsSection: React.FC<NewsSectionProps> = ({ news }) => {
           </div>
         ) : (
           <div className="rounded-2xl border border-dashed border-white/10 p-12 text-center">
-            <BellRing className="h-10 w-10 text-red-400/60 mx-auto mb-3" />
+            <BellRing className="h-10 w-10 text-cyan-400/60 mx-auto mb-3" />
             <h3 className="font-display text-xl font-bold text-white mb-2">
-              Em breve, novidades da <BrandName>DELXUS</BrandName>.
+              Em breve, novidades da <BrandName>DECIX GAMERS</BrandName>.
             </h3>
             <p className="text-sm text-slate-400 max-w-md mx-auto">
               Estamos concentrados na criação e aprimoramento de nossos jogos. Fique de olho neste

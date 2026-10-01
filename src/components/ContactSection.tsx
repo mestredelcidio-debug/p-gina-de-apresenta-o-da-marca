@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrandInfo } from '../types';
 import { Mail, Send, CheckCircle2, MessageSquare, Share2 } from 'lucide-react';
 import { BrandName } from './BrandName';
+import { trackLead } from '../utils/analytics';
 
 interface ContactSectionProps {
   brand: BrandInfo;
@@ -43,6 +44,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ brand }) => {
     if (Object.keys(errs).length > 0) return;
 
     setIsSubmitting(true);
+    // Track Lead conversion across GA, Pixel & CAPI
+    trackLead('Formulário de Contato Institucional', formData.email, formData.name, formData.subject);
+
     // Simulate professional form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -62,18 +66,18 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ brand }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Info Side */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-red-400">
+            <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-cyan-400">
               <MessageSquare className="h-4 w-4" />
               <span>Canais Institucionais</span>
             </div>
 
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
-              FALE COM A <BrandName>DELXUS</BrandName>
+              FALE COM A <BrandName>DECIX GAMERS</BrandName>
             </h2>
 
             <p className="text-base text-slate-300 leading-relaxed font-normal">
               Tem uma dúvida, encontrou um problema ou gostaria de falar conosco? Entre em contato
-              com a <BrandName>DELXUS</BrandName>.
+              com a <BrandName>DECIX GAMERS</BrandName>.
             </p>
 
             {/* Official Email Block */}
@@ -93,7 +97,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ brand }) => {
               </div>
               <p className="text-xs text-slate-400 leading-relaxed pt-1 border-t border-white/5">
                 Canal para dúvidas gerais, comunicação institucional e mensagens direcionadas ao
-                estúdio <BrandName className="text-xs">DELXUS</BrandName>.
+                estúdio <BrandName className="text-xs">DECIX GAMERS</BrandName>.
               </p>
             </div>
 
@@ -141,7 +145,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ brand }) => {
                     Mensagem Enviada com Sucesso!
                   </h3>
                   <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
-                    Agradecemos seu contato. Sua mensagem foi registrada para o time DELXUS e
+                    Agradecemos seu contato. Sua mensagem foi registrada para o time DECIX GAMERS e
                     responderemos pelo e-mail informado o mais breve possível.
                   </p>
                   <div className="pt-4">
@@ -160,7 +164,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ brand }) => {
                       Envie sua Mensagem
                     </h3>
                     <p className="text-xs text-slate-400 mt-1">
-                      Preencha os campos abaixo para falar diretamente com a equipe da <BrandName className="text-xs">DELXUS</BrandName>.
+                      Preencha os campos abaixo para falar diretamente com a equipe da <BrandName className="text-xs">DECIX GAMERS</BrandName>.
                     </p>
                   </div>
 

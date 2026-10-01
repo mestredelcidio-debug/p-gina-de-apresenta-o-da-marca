@@ -3,50 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DELXUS | Estúdio de Jogos</title>
-    <meta name="description" content="DELXUS é um estúdio de jogos digitais dedicado à criação de experiências divertidas, criativas e envolventes para jogadores." />
-    <meta name="keywords" content="DELXUS, jogos digitais, game studio, jogos mobile, caça-palavras, jogos android, indie game studio" />
-    <meta name="author" content="DELXUS" />
+    <title>DECIX GAMERS | Estúdio de Jogos</title>
+    <meta name="description" content="DECIX GAMERS é um estúdio de jogos digitais dedicado à criação de experiências divertidas, criativas e envolventes para jogadores." />
+    <meta name="keywords" content="DECIX GAMERS, decix gamers, jogos digitais, game studio, jogos mobile, caça-palavras, puzzle games, jogos android, indie game studio" />
+    <meta name="author" content="DECIX GAMERS" />
     <meta name="robots" content="index, follow" />
     
-    <!-- Official DELXUS Logo Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/delxus_emblem_original.svg" />
-    <link rel="apple-touch-icon" href="/delxus_emblem_original.svg" />
+    <!-- Official DECIX GAMERS Logo Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/decix_gamers_emblem.svg" />
+    <link rel="apple-touch-icon" href="/decix_gamers_emblem.svg" />
 
     <!-- OpenGraph Metadata -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="DELXUS | Estúdio de Jogos" />
-    <meta property="og:description" content="DELXUS é um estúdio de jogos digitais dedicado à criação de experiências divertidas, criativas e envolventes para jogadores." />
-    <meta property="og:site_name" content="DELXUS" />
+    <meta property="og:title" content="DECIX GAMERS | Estúdio de Jogos" />
+    <meta property="og:description" content="DECIX GAMERS é um estúdio de jogos digitais dedicado à criação de experiências divertidas, criativas e envolventes para jogadores." />
+    <meta property="og:site_name" content="DECIX GAMERS" />
     <meta property="og:locale" content="pt_BR" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="DELXUS | Estúdio de Jogos" />
-    <meta name="twitter:description" content="DELXUS é um estúdio de jogos digitais dedicado à criação de experiências divertidas, criativas e envolventes para jogadores." />
+    <meta name="twitter:title" content="DECIX GAMERS | Estúdio de Jogos" />
+    <meta name="twitter:description" content="DECIX GAMERS é um estúdio de jogos digitais dedicado à criação de experiências divertidas, criativas e envolventes para jogadores." />
 
     <!-- Google Fonts: Syne (Display) & Plus Jakarta Sans (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N6YL1CTR96"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-N6YL1CTR96');
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1445098570828605');
+      fbq('track', 'PageView');
+      fbq('track', 'viewcontent');
+    </script>
+    <!-- End Meta Pixel Code -->
+
     <!-- Structured Data (JSON-LD) for Game Studio -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "DELXUS",
-      "legalName": "DELXUS",
-      "url": "https://delxus.com",
+      "name": "DECIX GAMERS",
+      "legalName": "DECIX GAMERS",
+      "url": "https://decixgamers.com",
       "description": "Estúdio independente de jogos digitais focado em experiências divertidas, acessíveis e criativas para dispositivos móveis.",
-      "knowsAbout": ["Game Development", "Mobile Games", "Android Games", "Digital Entertainment"],
+      "knowsAbout": ["Game Development", "Mobile Games", "Android Games", "Digital Entertainment", "Puzzle Games"],
       "brand": {
         "@type": "Brand",
-        "name": "DELXUS",
+        "name": "DECIX GAMERS",
         "slogan": "Criando jogos. Criando experiências."
       }
     }
     </script>
   </head>
   <body class="bg-[#07090E] text-slate-100 antialiased selection:bg-cyan-500/20 selection:text-cyan-200">
+    <!-- Meta Pixel noscript fallback -->
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=1445098570828605&ev=PageView&noscript=1"
+           alt="" />
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

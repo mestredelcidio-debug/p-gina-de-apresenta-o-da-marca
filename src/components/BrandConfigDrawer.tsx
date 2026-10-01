@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { BrandInfo } from '../types';
 import { Settings2, X, RotateCcw, Check, Copy } from 'lucide-react';
 import { BrandName } from './BrandName';
-import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
-import delxusLogoSvg from '../assets/images/delxus_logo_original.svg';
+import decixEmblemSvg from '../assets/images/decix_gamers_emblem.svg';
+import decixLogoSvg from '../assets/images/decix_gamers_logo.svg';
 
 interface BrandConfigDrawerProps {
   brand: BrandInfo;
@@ -30,13 +30,13 @@ export const BrandConfigDrawer: React.FC<BrandConfigDrawerProps> = ({
       {/* Floating Trigger button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-4 right-4 z-40 inline-flex items-center gap-2 rounded-full border border-red-500/40 bg-[#0E131F]/90 backdrop-blur-md px-3.5 py-2 text-xs font-semibold text-red-400 shadow-xl shadow-black/60 hover:bg-[#151C2C] hover:border-red-400 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400"
-        title="Configurações e campos editáveis da marca DELXUS"
+        className="fixed bottom-4 right-4 z-40 inline-flex items-center gap-2 rounded-full border border-cyan-500/40 bg-[#0E131F]/90 backdrop-blur-md px-3.5 py-2 text-xs font-semibold text-cyan-400 shadow-xl shadow-black/60 hover:bg-[#151C2C] hover:border-cyan-300 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
+        title="Configurações e campos editáveis da marca DECIX GAMERS"
       >
-        <div className="h-4 w-4 rounded overflow-hidden border border-red-500/50 bg-black shrink-0">
+        <div className="h-4 w-4 rounded overflow-hidden border border-cyan-500/50 bg-black shrink-0">
           <img
-            src={delxusEmblemSvg}
-            alt="DELXUS Logo"
+            src={decixEmblemSvg}
+            alt="DECIX GAMERS Logo"
             className="h-full w-full object-contain"
           />
         </div>
@@ -51,16 +51,16 @@ export const BrandConfigDrawer: React.FC<BrandConfigDrawerProps> = ({
               {/* Header with Official Logo */}
               <div className="flex items-center justify-between border-b border-white/10 pb-4">
                 <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-md shadow-red-950/40 shrink-0">
+                  <div className="h-10 w-10 rounded-xl overflow-hidden border border-cyan-500/50 bg-black shadow-md shadow-cyan-950/40 shrink-0">
                     <img
-                      src={delxusLogoSvg}
-                      alt="Logotipo oficial DELXUS"
+                      src={decixLogoSvg}
+                      alt="Logotipo oficial DECIX GAMERS"
                       className="h-full w-full object-contain"
                     />
                   </div>
                   <div>
                     <h3 className="font-display text-base font-bold text-white">
-                      Dados da Marca <BrandName className="text-base">DELXUS</BrandName>
+                      Dados da Marca <BrandName className="text-base">DECIX GAMERS</BrandName>
                     </h3>
                     <span className="text-[11px] text-slate-400">Identidade Oficial</span>
                   </div>
@@ -75,7 +75,7 @@ export const BrandConfigDrawer: React.FC<BrandConfigDrawerProps> = ({
               </div>
 
               <p className="text-xs text-slate-300 leading-relaxed">
-                Edite os campos abaixo para testar a exibição com os dados oficiais reais da <BrandName className="text-xs">DELXUS</BrandName> (e-mail, links do Google Play e redes sociais).
+                Edite os campos abaixo para testar a exibição com os dados oficiais reais da <BrandName className="text-xs">DECIX GAMERS</BrandName> (e-mail, links do Google Play e redes sociais).
               </p>
 
               {/* Form fields */}

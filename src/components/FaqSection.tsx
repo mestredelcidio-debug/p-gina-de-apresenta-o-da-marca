@@ -19,12 +19,12 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
   };
 
   const renderWithBrandHighlight = (text: string) => {
-    if (!text.includes('DELXUS')) return text;
-    const parts = text.split('DELXUS');
+    if (!text.includes('DECIX GAMERS')) return text;
+    const parts = text.split('DECIX GAMERS');
     return parts.map((part, index) => (
       <React.Fragment key={index}>
         {part}
-        {index < parts.length - 1 && <BrandName>DELXUS</BrandName>}
+        {index < parts.length - 1 && <BrandName>DECIX GAMERS</BrandName>}
       </React.Fragment>
     ));
   };
@@ -34,7 +34,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-red-400 mb-2">
+          <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-cyan-400 mb-2">
             <HelpCircle className="h-4 w-4" />
             <span>Perguntas Frequentes</span>
           </div>
@@ -42,7 +42,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
             DÚVIDAS FREQUENTES
           </h2>
           <p className="mt-3 text-base text-slate-300 max-w-xl mx-auto">
-            Respostas diretas sobre a <BrandName>DELXUS</BrandName>, nossos jogos, plataformas e canais de contato.
+            Respostas diretas sobre a <BrandName>DECIX GAMERS</BrandName>, nossos jogos, plataformas e canais de contato.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
                 key={item.id}
                 className={`rounded-2xl border transition-all duration-200 overflow-hidden ${
                   isOpen
-                    ? 'border-red-500/40 bg-[#0E1422] shadow-lg shadow-black/40'
+                    ? 'border-cyan-500/40 bg-[#0E1422] shadow-lg shadow-black/40'
                     : 'border-white/10 bg-[#0A0D16] hover:border-white/20'
                 }`}
               >
@@ -63,14 +63,14 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
                   type="button"
                   onClick={() => toggleAccordion(item.id)}
                   aria-expanded={isOpen}
-                  className="w-full flex items-center justify-between p-6 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400"
+                  className="w-full flex items-center justify-between p-6 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
                 >
                   <span className="font-display text-base sm:text-lg font-bold text-white pr-4">
                     {renderWithBrandHighlight(item.question)}
                   </span>
                   <div
                     className={`h-8 w-8 rounded-full border border-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 ${
-                      isOpen ? 'rotate-180 bg-red-500/20 text-red-400 border-red-500/30' : 'text-slate-400'
+                      isOpen ? 'rotate-180 bg-cyan-500/20 text-cyan-400 border-cyan-500/30' : 'text-slate-400'
                     }`}
                   >
                     <ChevronDown className="h-4 w-4" />
@@ -92,15 +92,15 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
           <div>
             <h3 className="text-sm font-bold text-white">Não encontrou sua dúvida?</h3>
             <p className="text-xs text-slate-400 mt-0.5">
-              Nossa equipe está pronta para responder suas perguntas sobre a <BrandName className="text-xs">DELXUS</BrandName> e nossos jogos.
+              Nossa equipe está pronta para responder suas perguntas sobre a <BrandName className="text-xs">DECIX GAMERS</BrandName> e nossos jogos.
             </p>
           </div>
           <button
             onClick={onNavigateContact}
-            className="inline-flex items-center gap-2 rounded-lg bg-red-600/20 hover:bg-red-600/30 border border-red-500/30 px-4 py-2 text-xs font-bold uppercase tracking-wider text-white transition-colors shrink-0"
+            className="inline-flex items-center gap-2 rounded-lg bg-cyan-600/20 hover:bg-cyan-600/30 border border-cyan-500/30 px-4 py-2 text-xs font-bold uppercase tracking-wider text-white transition-colors shrink-0"
           >
-            <MessageSquare className="h-3.5 w-3.5 text-red-400" />
-            <span>Fale com a <BrandName className="ml-1 text-xs">DELXUS</BrandName></span>
+            <MessageSquare className="h-3.5 w-3.5 text-cyan-400" />
+            <span>Fale com a <BrandName className="ml-1 text-xs">DECIX GAMERS</BrandName></span>
           </button>
         </div>
       </div>

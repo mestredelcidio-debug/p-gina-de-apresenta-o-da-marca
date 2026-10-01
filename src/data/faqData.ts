@@ -3,14 +3,14 @@ import { FAQItem } from '../types';
 export const faqData: FAQItem[] = [
   {
     id: 'faq-1',
-    question: 'Quem é a DELXUS?',
-    answer: 'A DELXUS é uma marca brasileira de desenvolvimento de jogos digitais. Somos um estúdio independente focado em criar experiências divertidas, acessíveis, criativas e memoráveis para quem busca entretenimento de qualidade.',
-    category: 'Sobre a DELXUS',
+    question: 'Quem é a DECIX GAMERS?',
+    answer: 'A DECIX GAMERS é uma marca brasileira de desenvolvimento de jogos digitais. Somos um estúdio independente focado em criar experiências divertidas, acessíveis, criativas e memoráveis para quem busca entretenimento de qualidade.',
+    category: 'Sobre a DECIX GAMERS',
   },
   {
     id: 'faq-2',
-    question: 'Quais tipos de jogos a DELXUS desenvolve?',
-    answer: 'A DELXUS desenvolve jogos casuais e envolventes, como jogos de palavras, raciocínio, lógica e desafios inteligentes. Nossos títulos são pensados para serem fáceis de começar, gratificantes de jogar e agradáveis para diferentes perfis de jogadores.',
+    question: 'Quais tipos de jogos a DECIX GAMERS desenvolve?',
+    answer: 'A DECIX GAMERS desenvolve jogos casuais e envolventes, como jogos de palavras, raciocínio, lógica, quebra-cabeças e desafios inteligentes. Nossos títulos são pensados para serem fáceis de começar, gratificantes de jogar e agradáveis para diferentes perfis de jogadores.',
     category: 'Jogos',
   },
   {
@@ -21,7 +21,7 @@ export const faqData: FAQItem[] = [
   },
   {
     id: 'faq-4',
-    question: 'Como posso encontrar os jogos da DELXUS?',
+    question: 'Como posso encontrar os jogos da DECIX GAMERS?',
     answer: 'Você pode encontrar nossos títulos diretamente através da seção "Nossos Jogos" aqui no site oficial, onde disponibilizamos as informações de cada projeto e os links de download na Google Play.',
     category: 'Jogos',
   },
@@ -33,7 +33,7 @@ export const faqData: FAQItem[] = [
   },
   {
     id: 'faq-6',
-    question: 'Como posso entrar em contato com a DELXUS?',
+    question: 'Como posso entrar em contato com a DECIX GAMERS?',
     answer: 'Você pode entrar em contato conosco através do formulário na página de Contato ou pelo e-mail oficial informado no rodapé e na área de atendimento.',
     category: 'Contato',
   },

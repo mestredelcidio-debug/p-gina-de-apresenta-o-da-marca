@@ -1,6 +1,6 @@
 import React from 'react';
-import delxusLogoSvg from '../assets/images/delxus_logo_original.svg';
-import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
+import decixLogoSvg from '../assets/images/decix_gamers_logo.svg';
+import decixEmblemSvg from '../assets/images/decix_gamers_emblem.svg';
 
 interface BrandLogoProps {
   className?: string;
@@ -23,27 +23,27 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     xl: 'h-24 w-24',
   };
 
-  const logoSrc = variant === 'full' ? delxusLogoSvg : delxusEmblemSvg;
+  const logoSrc = variant === 'full' ? decixLogoSvg : decixEmblemSvg;
 
   return (
     <div className={`inline-flex items-center gap-2.5 ${className}`}>
       <div
-        className={`relative ${sizeMap[size]} shrink-0 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-lg shadow-red-600/30 group-hover:border-red-400 group-hover:scale-105 transition-all duration-300`}
+        className={`relative ${sizeMap[size]} shrink-0 rounded-xl overflow-hidden border border-cyan-500/50 bg-black shadow-lg shadow-cyan-600/30 group-hover:border-cyan-300 group-hover:scale-105 transition-all duration-300`}
       >
         <img
           src={logoSrc}
-          alt="Logotipo oficial da marca DELXUS"
+          alt="Logotipo oficial da marca DECIX GAMERS"
           className="h-full w-full object-contain"
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-t from-red-600/10 to-transparent pointer-events-none"
+          className="absolute inset-0 bg-gradient-to-t from-cyan-600/10 to-transparent pointer-events-none"
         />
       </div>
 
       {showText && (
-        <span className="font-display font-extrabold tracking-wider bg-gradient-to-r from-red-500 via-rose-500 to-amber-500 bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(239,68,68,0.4)]">
-          DELXUS
+        <span className="font-display font-extrabold tracking-wider bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-500 bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(14,165,233,0.55)]">
+          DECIX GAMERS
         </span>
       )}
     </div>

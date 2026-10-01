@@ -27,13 +27,18 @@ import { NotFoundPage } from './components/NotFoundPage';
 import { Footer } from './components/Footer';
 import { AmbientParticles } from './components/AmbientParticles';
 import { BrandConfigDrawer } from './components/BrandConfigDrawer';
+import { trackPageView } from './utils/analytics';
 
 export default function App() {
   const [brand, setBrand] = useState<BrandInfo>(() => {
-    const saved = localStorage.getItem('delxus_brand_config');
+    const saved = localStorage.getItem('decix_brand_config');
     if (saved) {
       try {
-        return JSON.parse(saved);
+        const parsed = JSON.parse(saved);
+        if (parsed && parsed.name && parsed.name.includes('DELXUS')) {
+          return initialBrandConfig;
+        }
+        return parsed;
       } catch {
         return initialBrandConfig;
       }
@@ -55,6 +60,11 @@ export default function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
+  // Track PageView on route changes
+  useEffect(() => {
+    trackPageView(currentPath);
+  }, [currentPath]);
+
   const navigateTo = (path: string) => {
     setCurrentPath(path);
     window.history.pushState({}, '', path);
@@ -63,11 +73,12 @@ export default function App() {
 
   const updateBrand = (updated: BrandInfo) => {
     setBrand(updated);
-    localStorage.setItem('delxus_brand_config', JSON.stringify(updated));
+    localStorage.setItem('decix_brand_config', JSON.stringify(updated));
   };
 
   const resetBrand = () => {
     setBrand(initialBrandConfig);
+    localStorage.removeItem('decix_brand_config');
     localStorage.removeItem('delxus_brand_config');
   };
 

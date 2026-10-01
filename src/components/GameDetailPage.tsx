@@ -13,6 +13,7 @@ import {
   Play,
 } from 'lucide-react';
 import { BrandName } from './BrandName';
+import { trackViewContent, trackOutboundClick } from '../utils/analytics';
 
 interface GameDetailPageProps {
   game: Game;
@@ -35,7 +36,13 @@ export const GameDetailPage: React.FC<GameDetailPageProps> = ({
   );
   const [copied, setCopied] = useState(false);
 
+  // Track ViewContent on load
+  React.useEffect(() => {
+    trackViewContent(game.title, game.genre, game.id);
+  }, [game.id, game.title, game.genre]);
+
   const handleDownload = () => {
+    trackOutboundClick(game.title, game.googlePlayUrl, 'google_play');
     if (game.googlePlayUrl && !game.googlePlayUrl.startsWith('[')) {
       window.open(game.googlePlayUrl, '_blank', 'noopener,noreferrer');
     } else {
@@ -46,7 +53,7 @@ export const GameDetailPage: React.FC<GameDetailPageProps> = ({
   const handleShare = () => {
     if (navigator.share) {
       navigator.share({
-        title: `${game.title} - DELXUS`,
+        title: `${game.title} - DECIX GAMERS`,
         text: game.shortDescription,
         url: window.location.href,
       }).catch(() => {});
@@ -153,7 +160,7 @@ export const GameDetailPage: React.FC<GameDetailPageProps> = ({
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-slate-300">
-                  <span className="font-semibold text-white">Universo <BrandName className="text-xs">DELXUS</BrandName></span>
+                  <span className="font-semibold text-white">Universo <BrandName className="text-xs">DECIX GAMERS</BrandName></span>
                   <span className="text-emerald-400 font-medium">Jogo Original</span>
                 </div>
               </div>

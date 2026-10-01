@@ -2,7 +2,7 @@ import React from 'react';
 import { BrandInfo } from '../types';
 import { FileText, ArrowLeft, ShieldCheck, Mail } from 'lucide-react';
 import { BrandName } from './BrandName';
-import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
+import decixEmblemSvg from '../assets/images/decix_gamers_emblem.svg';
 
 interface TermsOfUsePageProps {
   brand: BrandInfo;
@@ -27,15 +27,15 @@ export const TermsOfUsePage: React.FC<TermsOfUsePageProps> = ({ brand, onBack })
         {/* Page Header */}
         <div className="border-b border-white/10 pb-8 mb-10">
           <div className="flex items-center gap-3 mb-4">
-            <div className="h-12 w-12 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-lg shadow-red-950/40 shrink-0">
+            <div className="h-12 w-12 rounded-xl overflow-hidden border border-cyan-400/50 bg-black shadow-lg shadow-cyan-950/50 shrink-0 p-1">
               <img
-                src={delxusEmblemSvg}
-                alt="Logotipo oficial DELXUS"
+                src={decixEmblemSvg}
+                alt="Logotipo oficial DECIX GAMERS"
                 className="h-full w-full object-contain"
               />
             </div>
             <div>
-              <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-red-400">
+              <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-cyan-400">
                 <FileText className="h-3.5 w-3.5" />
                 <span>Condições de Uso</span>
               </div>
@@ -60,12 +60,12 @@ export const TermsOfUsePage: React.FC<TermsOfUsePageProps> = ({ brand, onBack })
           {/* 1. Aceitação */}
           <section className="space-y-3">
             <h2 className="font-display text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
-              <span className="text-red-400 font-mono text-base">01.</span>
+              <span className="text-cyan-400 font-mono text-base">01.</span>
               <span>Aceitação dos Termos</span>
             </h2>
             <p>
               Ao baixar, instalar, acessar ou utilizar quaisquer jogos, aplicativos ou serviços
-              disponibilizados sob a marca <BrandName>DELXUS</BrandName>, você concorda expressamente em
+              disponibilizados sob a marca <BrandName>DECIX GAMERS</BrandName>, você concorda expressamente em
               cumprir estes Termos de Uso. Caso não concorde com qualquer disposição aqui estabelecida,
               recomendamos que interrompa a utilização de nossos aplicativos e serviços.
             </p>
@@ -74,11 +74,11 @@ export const TermsOfUsePage: React.FC<TermsOfUsePageProps> = ({ brand, onBack })
           {/* 2. Uso dos Jogos */}
           <section className="space-y-3">
             <h2 className="font-display text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
-              <span className="text-red-400 font-mono text-base">02.</span>
+              <span className="text-cyan-400 font-mono text-base">02.</span>
               <span>Uso dos Jogos e Licença de Uso</span>
             </h2>
             <p>
-              A <BrandName>DELXUS</BrandName> concede a você uma licença pessoal, não exclusiva, intransferível, revogável e
+              A <BrandName>DECIX GAMERS</BrandName> concede a você uma licença pessoal, não exclusiva, intransferível, revogável e
               limitada para baixar e utilizar nossos jogos em dispositivos compatíveis, unicamente
               para fins pessoais, de entretenimento e sem propósitos comerciais.
             </p>
@@ -87,14 +87,14 @@ export const TermsOfUsePage: React.FC<TermsOfUsePageProps> = ({ brand, onBack })
           {/* 3. Propriedade Intelectual */}
           <section className="space-y-3">
             <h2 className="font-display text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
-              <span className="text-red-400 font-mono text-base">03.</span>
+              <span className="text-cyan-400 font-mono text-base">03.</span>
               <span>Propriedade Intelectual</span>
             </h2>
             <p>
-              Todos os direitos sobre a marca <BrandName>DELXUS</BrandName>, logotipos, arte visual,
+              Todos os direitos sobre a marca <BrandName>DECIX GAMERS</BrandName>, logotipos, arte visual,
               músicas, efeitos sonoros, código-fonte, mecânicas originais, design de fases, nomes de
               jogos (incluindo "Caça-Palavras: Universo das Palavras") e demais materiais correlatos são
-              de propriedade exclusiva da <BrandName>DELXUS</BrandName> ou de seus licenciadores, protegidos pelas leis de
+              de propriedade exclusiva da <BrandName>DECIX GAMERS</BrandName> ou de seus licenciadores, protegidos pelas leis de
               direitos autorais e propriedade industrial.
             </p>
           </section>
@@ -102,10 +102,10 @@ export const TermsOfUsePage: React.FC<TermsOfUsePageProps> = ({ brand, onBack })
           {/* 4. Comportamento do Usuário */}
           <section className="space-y-3">
             <h2 className="font-display text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
-              <span className="text-red-400 font-mono text-base">04.</span>
+              <span className="text-cyan-400 font-mono text-base">04.</span>
               <span>Conduta e Comportamento do Usuário</span>
             </h2>
-            <p>Ao utilizar os jogos da <BrandName>DELXUS</BrandName>, você se compromete a:</p>
+            <p>Ao utilizar os jogos da <BrandName>DECIX GAMERS</BrandName>, você se compromete a:</p>
             <ul className="list-disc pl-6 space-y-1.5 text-sm text-slate-300">
               <li>Não descompilar, aplicar engenharia reversa ou tentar extrair o código-fonte dos aplicativos.</li>
               <li>Não utilizar emuladores, cheats, automações não autorizadas ou mecanismos para fraudar o sistema.</li>
@@ -117,7 +117,7 @@ export const TermsOfUsePage: React.FC<TermsOfUsePageProps> = ({ brand, onBack })
           {/* 5. Compras e Pagamentos */}
           <section className="space-y-3">
             <h2 className="font-display text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
-              <span className="text-red-400 font-mono text-base">05.</span>
+              <span className="text-cyan-400 font-mono text-base">05.</span>
               <span>Compras no Aplicativo (In-App Purchases)</span>
             </h2>
             <p>
@@ -131,12 +131,12 @@ export const TermsOfUsePage: React.FC<TermsOfUsePageProps> = ({ brand, onBack })
           {/* 6. Anúncios */}
           <section className="space-y-3">
             <h2 className="font-display text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
-              <span className="text-red-400 font-mono text-base">06.</span>
+              <span className="text-cyan-400 font-mono text-base">06.</span>
               <span>Exibição de Anúncios</span>
             </h2>
             <p>
               Nossos jogos podem conter publicidade fornecida por redes de parceiros para manter as
-              experiências gratuitas. A <BrandName>DELXUS</BrandName> busca assegurar que os anúncios exibidos sejam
+              experiências gratuitas. A <BrandName>DECIX GAMERS</BrandName> busca assegurar que os anúncios exibidos sejam
               adequados, mas não se responsabiliza diretamente pelo conteúdo de páginas ou produtos de
               terceiros anunciados.
             </p>
@@ -145,11 +145,11 @@ export const TermsOfUsePage: React.FC<TermsOfUsePageProps> = ({ brand, onBack })
           {/* 7. Atualizações e Disponibilidade */}
           <section className="space-y-3">
             <h2 className="font-display text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
-              <span className="text-red-400 font-mono text-base">07.</span>
+              <span className="text-cyan-400 font-mono text-base">07.</span>
               <span>Atualizações e Disponibilidade dos Serviços</span>
             </h2>
             <p>
-              A <BrandName>DELXUS</BrandName> trabalha constantemente para aprimorar seus jogos. Podemos disponibilizar
+              A <BrandName>DECIX GAMERS</BrandName> trabalha constantemente para aprimorar seus jogos. Podemos disponibilizar
               atualizações periódicas contendo melhorias de desempenho, correções de bugs ou novos
               conteúdos. Reservamo-nos o direito de alterar, suspender ou descontinuar qualquer recurso ou
               jogo, no todo ou em parte, a qualquer momento.
@@ -159,13 +159,13 @@ export const TermsOfUsePage: React.FC<TermsOfUsePageProps> = ({ brand, onBack })
           {/* 8. Limitação de Responsabilidade */}
           <section className="space-y-3">
             <h2 className="font-display text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
-              <span className="text-red-400 font-mono text-base">08.</span>
+              <span className="text-cyan-400 font-mono text-base">08.</span>
               <span>Limitação de Responsabilidade</span>
             </h2>
             <p>
               Os jogos são fornecidos "no estado em que se encontram" (as-is), sem garantias de que
               funcionarão de modo ininterrupto ou livre de falhas em todos os modelos de dispositivos. Na
-              máxima extensão permitida pela legislação aplicável, a <BrandName>DELXUS</BrandName> não responderá por danos
+              máxima extensão permitida pela legislação aplicável, a <BrandName>DECIX GAMERS</BrandName> não responderá por danos
               indiretos, perda de dados locais ou indisponibilidade temporária de serviços de terceiros.
             </p>
           </section>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Game, BrandInfo } from '../types';
 import { Smartphone, Gamepad2, ArrowRight, ExternalLink, Sparkles, Filter } from 'lucide-react';
 import { BrandName } from './BrandName';
+import { trackOutboundClick } from '../utils/analytics';
 
 interface GamesCatalogProps {
   games: Game[];
@@ -25,6 +26,7 @@ export const GamesCatalog: React.FC<GamesCatalogProps> = ({
 
   const handleDownload = (e: React.MouseEvent, game: Game) => {
     e.stopPropagation();
+    trackOutboundClick(game.title, game.googlePlayUrl, 'google_play');
     if (game.googlePlayUrl && !game.googlePlayUrl.startsWith('[')) {
       window.open(game.googlePlayUrl, '_blank', 'noopener,noreferrer');
     } else {
@@ -38,9 +40,9 @@ export const GamesCatalog: React.FC<GamesCatalogProps> = ({
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
-            <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-red-400 mb-2">
+            <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-cyan-400 mb-2">
               <Gamepad2 className="h-4 w-4" />
-              <span>Catálogo <BrandName className="text-xs">DELXUS</BrandName></span>
+              <span>Catálogo <BrandName className="text-xs">DECIX GAMERS</BrandName></span>
             </div>
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
               NOSSOS JOGOS
@@ -217,7 +219,7 @@ export const GamesCatalog: React.FC<GamesCatalogProps> = ({
               Encontre nossos jogos no Google Play
             </h3>
             <p className="text-sm text-slate-300 max-w-xl">
-              Acompanhe a página oficial de desenvolvedor da <BrandName>DELXUS</BrandName> na loja e baixe nossos jogos com
+              Acompanhe a página oficial de desenvolvedor da <BrandName>DECIX GAMERS</BrandName> na loja e baixe nossos jogos com
               segurança e atualizações automáticas.
             </p>
             <p className="text-xs text-slate-400 font-mono pt-1">
@@ -227,10 +229,11 @@ export const GamesCatalog: React.FC<GamesCatalogProps> = ({
 
           <button
             onClick={() => {
+              trackOutboundClick('Página de Desenvolvedor Google Play', brand.googlePlayDeveloperUrl, 'google_play');
               if (!brand.googlePlayDeveloperUrl.startsWith('[')) {
                 window.open(brand.googlePlayDeveloperUrl, '_blank', 'noopener,noreferrer');
               } else {
-                alert(`Página de Desenvolvedor DELXUS: ${brand.googlePlayDeveloperUrl}\n\n(Configurável quando a página de desenvolvedor na Google Play Store for publicada).`);
+                alert(`Página de Desenvolvedor DECIX GAMERS: ${brand.googlePlayDeveloperUrl}\n\n(Configurável quando a página de desenvolvedor na Google Play Store for publicada).`);
               }
             }}
             className="group shrink-0 inline-flex items-center gap-2.5 rounded-lg bg-white text-slate-950 hover:bg-slate-100 px-6 py-3.5 text-xs font-bold uppercase tracking-wider transition-all active:scale-[0.98] shadow-lg shadow-white/5"

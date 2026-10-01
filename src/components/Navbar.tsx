@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
-import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
+import decixEmblemSvg from '../assets/images/decix_gamers_emblem.svg';
 
 interface NavbarProps {
   currentPath: string;
@@ -48,18 +48,23 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate }) => {
           <a
             href="/"
             onClick={(e) => handleLinkClick(e, '/')}
-            className="group flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400 rounded-sm"
+            className="group flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-sm"
           >
-            <div className="h-9 w-9 sm:h-10 sm:w-10 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-md shadow-red-600/30 group-hover:scale-105 group-hover:border-red-400 transition-all duration-300">
+            <div className="h-9 w-9 sm:h-10 sm:w-10 rounded-xl overflow-hidden border border-cyan-400/50 bg-black shadow-md shadow-cyan-600/30 group-hover:scale-105 group-hover:border-cyan-300 transition-all duration-300">
               <img
-                src={delxusEmblemSvg}
-                alt="Logotipo oficial DELXUS"
+                src={decixEmblemSvg}
+                alt="Logotipo oficial DECIX GAMERS"
                 className="h-full w-full object-contain"
               />
             </div>
-            <span className="font-display text-2xl sm:text-3xl font-extrabold tracking-wider bg-gradient-to-r from-red-500 via-rose-500 to-amber-500 bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(239,68,68,0.5)] group-hover:brightness-110 transition-all">
-              DELXUS
-            </span>
+            <div className="flex flex-col">
+              <span className="font-display text-xl sm:text-2xl font-extrabold tracking-wider bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-500 bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(14,165,233,0.55)] group-hover:brightness-110 transition-all leading-tight">
+                DECIX GAMERS
+              </span>
+              <span className="hidden sm:block text-[9px] uppercase tracking-[0.25em] text-cyan-400/80 font-bold -mt-0.5">
+                Game Studio
+              </span>
+            </div>
           </a>
 
           {/* Zone 2: Clean text navigation links */}

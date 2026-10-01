@@ -14,7 +14,8 @@ import {
   ArrowLeft,
 } from 'lucide-react';
 import { BrandName } from './BrandName';
-import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
+import decixEmblemSvg from '../assets/images/decix_gamers_emblem.svg';
+import { trackLead } from '../utils/analytics';
 
 interface SupportPageProps {
   brand: BrandInfo;
@@ -97,6 +98,9 @@ export const SupportPage: React.FC<SupportPageProps> = ({
     if (Object.keys(errs).length > 0) return;
 
     setIsSubmitting(true);
+    // Track Lead / Support ticket conversion across GA, Pixel & CAPI
+    trackLead('Chamado de Suporte ao Jogador', formData.email, formData.name, `${formData.game} - ${formData.issueType}`);
+
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
@@ -126,24 +130,24 @@ export const SupportPage: React.FC<SupportPageProps> = ({
 
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="mx-auto mb-4 h-12 w-12 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-lg shadow-red-950/40">
+          <div className="mx-auto mb-4 h-14 w-14 rounded-xl overflow-hidden border border-cyan-400/50 bg-black shadow-lg shadow-cyan-950/50 p-1">
             <img
-              src={delxusEmblemSvg}
-              alt="Logotipo DELXUS Suporte"
+              src={decixEmblemSvg}
+              alt="Logotipo DECIX GAMERS Suporte"
               className="h-full w-full object-contain"
             />
           </div>
-          <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-red-400 mb-2">
+          <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-cyan-400 mb-2">
             <LifeBuoy className="h-4 w-4" />
             <span>Central de Atendimento</span>
           </div>
           <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
-            SUPORTE AO JOGADOR <BrandName className="text-3xl sm:text-4xl md:text-5xl">DELXUS</BrandName>
+            SUPORTE AO JOGADOR <BrandName className="text-3xl sm:text-4xl md:text-5xl">DECIX GAMERS</BrandName>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed">
             Estamos empenhados em oferecer a melhor experiência possível em nossos jogos. Utilize
             este canal para relatar problemas técnicos, bugs, dificuldades com anúncios ou nos enviar
-            suas sugestões para a equipe da <BrandName>DELXUS</BrandName>.
+            suas sugestões para a equipe da <BrandName>DECIX GAMERS</BrandName>.
           </p>
         </div>
 
@@ -278,7 +282,7 @@ export const SupportPage: React.FC<SupportPageProps> = ({
                         {g.title}
                       </option>
                     ))}
-                    <option value="Outro assunto da DELXUS" className="bg-[#080B12] text-white">
+                    <option value="Outro assunto da DECIX GAMERS" className="bg-[#080B12] text-white">
                       Outro assunto do estúdio
                     </option>
                   </select>

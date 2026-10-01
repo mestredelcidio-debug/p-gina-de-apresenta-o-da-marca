@@ -3,14 +3,14 @@
 @theme {
   --font-display: "Syne", sans-serif;
   --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --color-delxus-dark: #07090E;
-  --color-delxus-surface: #0E121B;
-  --color-delxus-surface-elevated: #151B27;
-  --color-delxus-border: rgba(255, 255, 255, 0.08);
-  --color-delxus-cyan: #06B6D4;
-  --color-delxus-emerald: #10B981;
-  --color-delxus-red: #EF4444;
-  --color-delxus-flame: #DC2626;
+  --color-decix-dark: #07090E;
+  --color-decix-surface: #0E121B;
+  --color-decix-surface-elevated: #151B27;
+  --color-decix-border: rgba(255, 255, 255, 0.08);
+  --color-decix-cyan: #00D2FF;
+  --color-decix-sky: #38BDF8;
+  --color-decix-blue: #0284C7;
+  --color-decix-emerald: #10B981;
 }
 
 :root {
