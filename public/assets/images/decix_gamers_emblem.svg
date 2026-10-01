@@ -1,17 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 360" width="460" height="360">
   <defs>
     <!-- Background Radial Bloom -->
-    <radialGradient id="emblemBg" cx="50%" cy="50%" r="55%">
-      <stop offset="0%" stop-color="#082b4e" stop-opacity="0.9"/>
-      <stop offset="45%" stop-color="#031326" stop-opacity="0.7"/>
-      <stop offset="85%" stop-color="#01060e" stop-opacity="0.95"/>
+    <radialGradient id="emblemBg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#083864" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#041a33" stop-opacity="0.8"/>
+      <stop offset="85%" stop-color="#020814" stop-opacity="0.98"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="1"/>
     </radialGradient>
 
     <!-- Neon Cyan Glow Filters -->
     <filter id="emblemGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3" result="b1" />
-      <feGaussianBlur stdDeviation="9" result="b2" />
+      <feGaussianBlur stdDeviation="3.5" result="b1" />
+      <feGaussianBlur stdDeviation="10" result="b2" />
       <feMerge>
         <feMergeNode in="b2" />
         <feMergeNode in="b1" />
@@ -28,149 +28,149 @@
 
     <linearGradient id="embBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="40%" stop-color="#00E5FF"/>
-      <stop offset="80%" stop-color="#0284C7"/>
-      <stop offset="100%" stop-color="#38BDF8"/>
+      <stop offset="30%" stop-color="#00F0FF"/>
+      <stop offset="70%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#00F0FF"/>
     </linearGradient>
   </defs>
 
-  <!-- Solid Obsidian Background -->
-  <rect width="512" height="512" fill="#000000" rx="36"/>
-  <circle cx="256" cy="256" r="230" fill="url(#emblemBg)"/>
+  <!-- Solid Obsidian Background with Rounded Corner -->
+  <rect width="460" height="360" fill="#000000" rx="28"/>
+  <circle cx="230" cy="180" r="175" fill="url(#emblemBg)"/>
 
-  <!-- Centered Puzzle Emblem Graphic -->
-  <g id="puzzle-emblem-core" transform="translate(256, 260) scale(0.95) translate(-450, -550)">
+  <!-- Centered Puzzle Emblem Graphic (Zoomed in & ultra clear) -->
+  <g id="puzzle-emblem-core" transform="translate(230, 185) scale(1.05) translate(-450, -540)">
 
     <!-- PUZZLE PIECE CONTOUR -->
     <path d="M 330 460
              H 415
-             C 415 440, 420 415, 450 415
-             C 480 415, 485 440, 485 460
+             C 415 438, 420 412, 450 412
+             C 480 412, 485 438, 485 460
              H 570
              C 586 460, 600 474, 600 490
              V 525
-             C 620 525, 645 530, 645 560
-             C 645 590, 620 595, 600 595
+             C 620 525, 646 530, 646 560
+             C 646 590, 620 595, 600 595
              V 630
              C 600 646, 586 660, 570 660
              H 485
-             C 485 680, 480 705, 450 705
-             C 420 705, 415 680, 415 660
+             C 485 682, 480 708, 450 708
+             C 420 708, 415 682, 415 660
              H 330
              C 314 660, 300 646, 300 630
              V 595
-             C 275 595, 255 585, 255 560
-             C 255 535, 275 525, 300 525
+             C 274 595, 252 585, 252 560
+             C 252 535, 274 525, 300 525
              V 490
              C 300 474, 314 460, 330 460 Z"
           fill="#020e1c"
-          fill-opacity="0.88"
+          fill-opacity="0.92"
           stroke="url(#embBorderGrad)"
-          stroke-width="7"
+          stroke-width="7.5"
           stroke-linejoin="round"
           stroke-linecap="round"
           filter="url(#emblemGlow)" />
 
     <!-- TOP-LEFT: Crossword Puzzle -->
-    <g id="crossword" transform="translate(328, 385)">
-      <rect x="0" y="24" width="70" height="18" rx="3" fill="#021427" stroke="#00E5FF" stroke-width="2.2"/>
-      <rect x="26" y="0" width="18" height="66" rx="3" fill="#021427" stroke="#00E5FF" stroke-width="2.2"/>
-      <g font-family="monospace" font-size="10.5" font-weight="900" fill="#38BDF8" text-anchor="middle">
-        <text x="35" y="14">C</text>
-        <text x="9" y="37">C</text>
-        <text x="21" y="37">A</text>
-        <text x="35" y="37">L</text>
-        <text x="48" y="37">L</text>
-        <text x="60" y="37">M</text>
-        <text x="35" y="59">I</text>
+    <g id="crossword" transform="translate(326, 382)" filter="url(#emblemGlow)">
+      <rect x="0" y="24" width="72" height="20" rx="3" fill="#021427" stroke="#00F0FF" stroke-width="2.5"/>
+      <rect x="26" y="0" width="20" height="68" rx="3" fill="#021427" stroke="#00F0FF" stroke-width="2.5"/>
+      <g font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="900" fill="#E0F2FE" text-anchor="middle">
+        <text x="36" y="15">C</text>
+        <text x="9" y="38">C</text>
+        <text x="22" y="38">A</text>
+        <text x="36" y="38">L</text>
+        <text x="50" y="38">L</text>
+        <text x="63" y="38">M</text>
+        <text x="36" y="61">I</text>
       </g>
     </g>
 
     <!-- TOP-RIGHT: Word Search Grid -->
-    <g id="wordsearch" transform="translate(502, 396)">
-      <rect x="0" y="0" width="72" height="66" rx="4" fill="#021427" stroke="#00E5FF" stroke-width="2.5"/>
-      <line x1="14" y1="0" x2="14" y2="66" stroke="#00D2FF" stroke-width="1" opacity="0.6"/>
-      <line x1="28" y1="0" x2="28" y2="66" stroke="#00D2FF" stroke-width="1" opacity="0.6"/>
-      <line x1="42" y1="0" x2="42" y2="66" stroke="#00D2FF" stroke-width="1" opacity="0.6"/>
-      <line x1="56" y1="0" x2="56" y2="66" stroke="#00D2FF" stroke-width="1" opacity="0.6"/>
-      <line x1="0" y1="13" x2="72" y2="13" stroke="#00D2FF" stroke-width="1" opacity="0.6"/>
-      <line x1="0" y1="26" x2="72" y2="26" stroke="#00D2FF" stroke-width="1" opacity="0.6"/>
-      <line x1="0" y1="39" x2="72" y2="39" stroke="#00D2FF" stroke-width="1" opacity="0.6"/>
-      <line x1="0" y1="52" x2="72" y2="52" stroke="#00D2FF" stroke-width="1" opacity="0.6"/>
-      <g font-family="monospace" font-size="8.5" font-weight="800" fill="#38BDF8" text-anchor="middle">
-        <text x="7" y="10">P</text><text x="21" y="10">U</text><text x="35" y="10">O</text><text x="49" y="10">R</text><text x="64" y="10">P</text>
-        <text x="7" y="23">P</text><text x="21" y="23">U</text><text x="35" y="23">B</text><text x="49" y="23">O</text><text x="64" y="23">R</text>
-        <text x="7" y="36">P</text><text x="21" y="36">U</text><text x="35" y="36">Z</text><text x="49" y="36">E</text><text x="64" y="36">L</text>
-        <text x="7" y="49">A</text><text x="21" y="49">U</text><text x="35" y="49">E</text><text x="49" y="49">L</text><text x="64" y="49">L</text>
-        <text x="7" y="62">N</text><text x="21" y="62">Z</text><text x="35" y="62">L</text><text x="49" y="62">L</text><text x="64" y="62">E</text>
+    <g id="wordsearch" transform="translate(502, 394)" filter="url(#emblemGlow)">
+      <rect x="0" y="0" width="76" height="70" rx="4" fill="#021427" stroke="#00F0FF" stroke-width="2.8"/>
+      <line x1="15" y1="0" x2="15" y2="70" stroke="#00D2FF" stroke-width="1.2" opacity="0.7"/>
+      <line x1="30" y1="0" x2="30" y2="70" stroke="#00D2FF" stroke-width="1.2" opacity="0.7"/>
+      <line x1="45" y1="0" x2="45" y2="70" stroke="#00D2FF" stroke-width="1.2" opacity="0.7"/>
+      <line x1="60" y1="0" x2="60" y2="70" stroke="#00D2FF" stroke-width="1.2" opacity="0.7"/>
+      <line x1="0" y1="14" x2="76" y2="14" stroke="#00D2FF" stroke-width="1.2" opacity="0.7"/>
+      <line x1="0" y1="28" x2="76" y2="28" stroke="#00D2FF" stroke-width="1.2" opacity="0.7"/>
+      <line x1="0" y1="42" x2="76" y2="42" stroke="#00D2FF" stroke-width="1.2" opacity="0.7"/>
+      <line x1="0" y1="56" x2="76" y2="56" stroke="#00D2FF" stroke-width="1.2" opacity="0.7"/>
+      <g font-family="monospace" font-size="9" font-weight="900" fill="#E0F2FE" text-anchor="middle">
+        <text x="7.5" y="11">P</text><text x="22.5" y="11">U</text><text x="37.5" y="11">O</text><text x="52.5" y="11">R</text><text x="67.5" y="11">P</text>
+        <text x="7.5" y="25">P</text><text x="22.5" y="25">U</text><text x="37.5" y="25">B</text><text x="52.5" y="25">O</text><text x="67.5" y="25">R</text>
+        <text x="7.5" y="39">P</text><text x="22.5" y="39">U</text><text x="37.5" y="39">Z</text><text x="52.5" y="39">E</text><text x="67.5" y="39">L</text>
+        <text x="7.5" y="53">A</text><text x="22.5" y="53">U</text><text x="37.5" y="53">E</text><text x="52.5" y="53">L</text><text x="67.5" y="53">L</text>
+        <text x="7.5" y="67">N</text><text x="22.5" y="67">Z</text><text x="37.5" y="67">L</text><text x="52.5" y="67">L</text><text x="67.5" y="67">E</text>
       </g>
     </g>
 
     <!-- LEFT: Magnifying Glass -->
-    <g id="magnifier" transform="translate(230, 528)" filter="url(#emblemGlow)">
-      <circle cx="28" cy="28" r="20" fill="#011020" stroke="#00E5FF" stroke-width="5"/>
-      <circle cx="28" cy="28" r="14" fill="#00D2FF" fill-opacity="0.15"/>
-      <path d="M 18 20 A 13 13 0 0 1 34 16" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
-      <line x1="42" y1="42" x2="60" y2="60" stroke="#00E5FF" stroke-width="6" stroke-linecap="round"/>
+    <g id="magnifier" transform="translate(224, 524)" filter="url(#emblemGlow)">
+      <circle cx="30" cy="30" r="22" fill="#011224" stroke="#00F0FF" stroke-width="5.5"/>
+      <circle cx="30" cy="30" r="15" fill="#00F0FF" fill-opacity="0.2"/>
+      <path d="M 20 22 A 14 14 0 0 1 37 18" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+      <line x1="45" y1="45" x2="66" y2="66" stroke="#00F0FF" stroke-width="7" stroke-linecap="round"/>
     </g>
 
-    <!-- LETTERS 'D' and 'G' -->
+    <!-- LETTERS 'D' and 'G' (Thick, luminous 3D effect) -->
     <g id="letters" filter="url(#emblemGlow)">
       <!-- D -->
-      <path d="M 330 500
-               H 385
-               C 425 500, 448 522, 448 558
-               C 448 594, 425 616, 385 616
+      <path d="M 330 498
+               H 386
+               C 428 498, 452 522, 452 558
+               C 452 594, 428 618, 386 618
                H 330
-               V 500 Z
-               M 358 524
-               V 592
+               V 498 Z
+               M 358 522
+               V 594
                H 382
-               C 406 592, 420 580, 420 558
-               C 420 536, 406 524, 382 524
+               C 408 594, 423 580, 423 558
+               C 423 536, 408 522, 382 522
                H 358 Z"
             fill="url(#embLetterGrad)"
-            stroke="#00E5FF"
-            stroke-width="4.5"
+            stroke="#00F0FF"
+            stroke-width="5"
             stroke-linejoin="round" />
 
       <!-- G -->
-      <path d="M 568 532
-               C 555 512, 535 500, 508 500
-               C 470 500, 445 526, 445 560
-               C 445 594, 470 616, 508 616
-               C 542 616, 565 598, 568 565
-               H 515
-               V 545
-               H 588
+      <path d="M 570 530
+               C 556 510, 536 498, 508 498
+               C 468 498, 442 526, 442 560
+               C 442 594, 468 618, 508 618
+               C 544 618, 568 598, 570 564
+               H 514
+               V 542
+               H 592
                V 566
-               C 584 612, 552 638, 508 638
-               C 455 638, 418 602, 418 558
-               C 418 514, 455 478, 508 478
-               C 545 478, 574 494, 592 520
-               L 568 532 Z"
+               C 588 614, 554 642, 508 642
+               C 452 642, 414 604, 414 558
+               C 414 512, 452 474, 508 474
+               C 546 474, 576 492, 594 518
+               L 570 530 Z"
             fill="url(#embLetterGrad)"
-            stroke="#00E5FF"
-            stroke-width="4.5"
+            stroke="#00F0FF"
+            stroke-width="5"
             stroke-linejoin="round" />
     </g>
 
     <!-- CENTER 'i' / QUESTION HOOK -->
     <g id="center-hook" filter="url(#emblemGlow)">
-      <path d="M 436 496 C 436 476, 464 476, 464 496 C 464 514, 450 518, 450 534"
-            fill="none" stroke="#00E5FF" stroke-width="4.5" stroke-linecap="round"/>
-      <circle cx="450" cy="548" r="4" fill="#FFFFFF" stroke="#00E5FF" stroke-width="2"/>
+      <path d="M 436 494 C 436 472, 464 472, 464 494 C 464 514, 450 518, 450 534"
+            fill="none" stroke="#00F0FF" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="450" cy="548" r="4.5" fill="#FFFFFF" stroke="#00F0FF" stroke-width="2"/>
     </g>
 
     <!-- BOTTOM-CENTER: Open Book -->
     <g id="book" transform="translate(422, 608)" filter="url(#emblemGlow)">
-      <path d="M 28 28 C 20 22, 10 20, 0 22 V 38 C 10 36, 20 38, 28 44 Z" fill="#031a33" stroke="#00E5FF" stroke-width="2.5" stroke-linejoin="round" />
-      <path d="M 28 28 C 36 22, 46 20, 56 22 V 38 C 46 36, 36 38, 28 44 Z" fill="#031a33" stroke="#00E5FF" stroke-width="2.5" stroke-linejoin="round" />
-      <line x1="28" y1="26" x2="28" y2="44" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M 6 27 C 12 26, 18 27, 23 30" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round"/>
-      <path d="M 6 33 C 12 32, 18 33, 23 36" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round"/>
-      <path d="M 33 30 C 38 27, 44 26, 50 27" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round"/>
-      <path d="M 33 36 C 38 33, 44 32, 50 33" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M 28 28 C 20 22, 10 20, 0 22 V 40 C 10 38, 20 40, 28 46 Z" fill="#031a33" stroke="#00F0FF" stroke-width="3" stroke-linejoin="round" />
+      <path d="M 28 28 C 36 22, 46 20, 56 22 V 40 C 46 38, 36 40, 28 46 Z" fill="#031a33" stroke="#00F0FF" stroke-width="3" stroke-linejoin="round" />
+      <line x1="28" y1="26" x2="28" y2="46" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+      <path d="M 6 27 C 12 26, 18 27, 23 30" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 6 33 C 12 32, 18 33, 23 36" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 33 30 C 38 27, 44 26, 50 27" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 33 36 C 38 33, 44 32, 50 33" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
     </g>
   </g>
 </svg>

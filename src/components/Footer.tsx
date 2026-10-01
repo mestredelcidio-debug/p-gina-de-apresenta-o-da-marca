@@ -25,16 +25,16 @@ export const Footer: React.FC<FooterProps> = ({ brand, onNavigate }) => {
             <a
               href="/"
               onClick={(e) => handleNav(e, '/')}
-              className="inline-flex items-center gap-3 group"
+              className="inline-flex items-center gap-3.5 group"
             >
-              <div className="h-10 w-10 rounded-xl overflow-hidden border border-cyan-400/50 bg-black shadow-md shadow-cyan-600/30 group-hover:scale-105 transition-transform duration-300">
+              <div className="h-12 w-12 sm:h-14 sm:w-14 rounded-xl overflow-hidden border border-cyan-400/60 bg-black/90 shadow-lg shadow-cyan-500/25 group-hover:scale-105 group-hover:border-cyan-300 transition-all duration-300 shrink-0">
                 <img
                   src={decixEmblemSvg}
                   alt="Logotipo oficial DECIX GAMERS"
-                  className="h-full w-full object-contain"
+                  className="h-full w-full object-cover scale-105"
                 />
               </div>
-              <BrandName className="text-2xl font-display font-extrabold tracking-wider">
+              <BrandName className="text-2xl sm:text-3xl font-display font-extrabold tracking-wider">
                 DECIX GAMERS
               </BrandName>
             </a>

@@ -48,20 +48,20 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate }) => {
           <a
             href="/"
             onClick={(e) => handleLinkClick(e, '/')}
-            className="group flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-sm"
+            className="group flex items-center gap-3.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-lg py-1 px-1.5 -ml-1.5 transition-all"
           >
-            <div className="h-9 w-9 sm:h-10 sm:w-10 rounded-xl overflow-hidden border border-cyan-400/50 bg-black shadow-md shadow-cyan-600/30 group-hover:scale-105 group-hover:border-cyan-300 transition-all duration-300">
+            <div className="h-11 w-11 sm:h-12 sm:w-12 rounded-xl overflow-hidden border border-cyan-400/60 bg-black/90 shadow-lg shadow-cyan-500/25 group-hover:scale-105 group-hover:border-cyan-300 group-hover:shadow-cyan-400/40 transition-all duration-300 shrink-0">
               <img
                 src={decixEmblemSvg}
                 alt="Logotipo oficial DECIX GAMERS"
-                className="h-full w-full object-contain"
+                className="h-full w-full object-cover scale-105"
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-display text-xl sm:text-2xl font-extrabold tracking-wider bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-500 bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(14,165,233,0.55)] group-hover:brightness-110 transition-all leading-tight">
+              <span className="font-display text-xl sm:text-2xl font-extrabold tracking-wider bg-gradient-to-r from-cyan-200 via-sky-300 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_0_16px_rgba(0,210,255,0.6)] group-hover:brightness-125 transition-all leading-tight">
                 DECIX GAMERS
               </span>
-              <span className="hidden sm:block text-[9px] uppercase tracking-[0.25em] text-cyan-400/80 font-bold -mt-0.5">
+              <span className="text-[10px] uppercase tracking-[0.28em] text-cyan-300 font-extrabold -mt-0.5">
                 Game Studio
               </span>
             </div>

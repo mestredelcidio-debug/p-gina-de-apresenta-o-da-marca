@@ -85,22 +85,26 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ brand }) => {
               </p>
             </div>
 
-            {/* Logo feature banner */}
-            <div className="p-4 rounded-xl border border-cyan-500/30 bg-gradient-to-r from-cyan-950/40 via-black/50 to-transparent flex items-center gap-4 shadow-lg shadow-cyan-950/30">
-              <div className="h-16 w-16 rounded-xl overflow-hidden border border-cyan-400/50 bg-black shadow-lg shadow-cyan-900/40 shrink-0 p-1">
+            {/* Logo feature banner (Close-up Showcase) */}
+            <div className="p-5 rounded-2xl border-2 border-cyan-500/40 bg-gradient-to-r from-cyan-950/50 via-black/70 to-[#0A0D15] flex flex-col sm:flex-row items-center sm:items-center gap-5 shadow-2xl shadow-cyan-950/50">
+              <div className="h-24 w-24 sm:h-28 sm:w-28 rounded-2xl overflow-hidden border-2 border-cyan-400/70 bg-black/90 shadow-xl shadow-cyan-900/50 shrink-0 p-1.5 group hover:scale-105 transition-all">
                 <img
                   src={decixLogoSvg}
                   alt="Logotipo oficial da marca DECIX GAMERS"
                   className="h-full w-full object-contain"
                 />
               </div>
-              <div className="text-xs">
-                <span className="block font-display font-bold text-white uppercase tracking-wider">
-                  Logotipo Oficial da Marca
-                </span>
-                <span className="text-slate-300">
-                  O emblemático quebra-cabeça com letras <BrandName className="text-xs">DECIX GAMERS</BrandName>, palavras cruzadas, caça-palavras e lupa simboliza nossa dedicação a jogos inteligentes, instigantes e divertidos.
-                </span>
+              <div className="text-xs sm:text-sm space-y-1 text-center sm:text-left">
+                <div className="inline-flex items-center gap-2 text-cyan-300 font-bold uppercase tracking-wider text-xs">
+                  <Sparkles className="h-3.5 w-3.5 text-cyan-400" />
+                  <span>Identidade Visual & Símbolo Oficial</span>
+                </div>
+                <h4 className="font-display font-extrabold text-white text-base sm:text-lg">
+                  O Emblema DECIX GAMERS
+                </h4>
+                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                  O emblemático quebra-cabeça 3D com letras <BrandName className="text-xs">DECIX GAMERS</BrandName>, palavras cruzadas, caça-palavras e lupa simboliza nossa dedicação a jogos inteligentes, instigantes e divertidos.
+                </p>
               </div>
             </div>
 
