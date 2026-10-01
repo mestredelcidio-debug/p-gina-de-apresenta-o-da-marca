@@ -1,4 +1,6 @@
 import React from 'react';
+import delxusLogoSvg from '../assets/images/delxus_logo_original.svg';
+import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
 
 interface BrandLogoProps {
   className?: string;
@@ -21,10 +23,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     xl: 'h-24 w-24',
   };
 
-  const logoSrc =
-    variant === 'full'
-      ? '/src/assets/images/delxus_logo_original.svg'
-      : '/src/assets/images/delxus_emblem_original.svg';
+  const logoSrc = variant === 'full' ? delxusLogoSvg : delxusEmblemSvg;
 
   return (
     <div className={`inline-flex items-center gap-2.5 ${className}`}>

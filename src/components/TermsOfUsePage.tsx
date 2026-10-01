@@ -2,6 +2,7 @@ import React from 'react';
 import { BrandInfo } from '../types';
 import { FileText, ArrowLeft, ShieldCheck, Mail } from 'lucide-react';
 import { BrandName } from './BrandName';
+import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
 
 interface TermsOfUsePageProps {
   brand: BrandInfo;
@@ -28,9 +29,9 @@ export const TermsOfUsePage: React.FC<TermsOfUsePageProps> = ({ brand, onBack })
           <div className="flex items-center gap-3 mb-4">
             <div className="h-12 w-12 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-lg shadow-red-950/40 shrink-0">
               <img
-                src="/src/assets/images/delxus_logo_official_1790824285866.jpg"
+                src={delxusEmblemSvg}
                 alt="Logotipo oficial DELXUS"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
               />
             </div>
             <div>

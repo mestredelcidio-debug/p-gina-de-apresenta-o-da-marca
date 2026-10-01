@@ -2,6 +2,8 @@ import React from 'react';
 import { ArrowRight, Sparkles, Gamepad2, Compass } from 'lucide-react';
 import { BrandInfo } from '../types';
 import { BrandName } from './BrandName';
+import heroStudioImg from '../assets/images/hero_delxus_studio_1790822350853.jpg';
+import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
 
 interface HeroProps {
   brand: BrandInfo;
@@ -19,7 +21,7 @@ export const Hero: React.FC<HeroProps> = ({
       {/* Background Studio Visual with measured scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_delxus_studio_1790822350853.jpg"
+          src={heroStudioImg}
           alt="Ambiente cinematográfico do estúdio de desenvolvimento DELXUS"
           referrerPolicy="no-referrer"
           className="h-full w-full object-cover object-center opacity-30 scale-105 transition-transform duration-1000 ease-out"
@@ -43,7 +45,7 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="group relative flex items-center gap-3 px-4 py-2 rounded-2xl bg-black/60 border border-red-500/40 shadow-xl shadow-red-950/40 backdrop-blur-md hover:border-red-400 transition-all">
             <div className="h-8 w-8 rounded-lg overflow-hidden border border-red-500/50 bg-black shadow-inner shrink-0">
               <img
-                src="/src/assets/images/delxus_emblem_original.svg"
+                src={delxusEmblemSvg}
                 alt="Emblema oficial DELXUS"
                 className="h-full w-full object-contain"
               />

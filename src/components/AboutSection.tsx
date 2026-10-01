@@ -2,6 +2,7 @@ import React from 'react';
 import { Lightbulb, Smile, Cpu, Sparkles, Target, Compass, Layers, CheckCircle2 } from 'lucide-react';
 import { BrandInfo } from '../types';
 import { BrandName } from './BrandName';
+import delxusLogoSvg from '../assets/images/delxus_logo_original.svg';
 
 interface AboutSectionProps {
   brand: BrandInfo;
@@ -88,7 +89,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ brand }) => {
             <div className="p-4 rounded-xl border border-red-500/20 bg-gradient-to-r from-red-950/30 via-black/40 to-transparent flex items-center gap-4">
               <div className="h-16 w-16 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-lg shadow-red-900/30 shrink-0 p-1">
                 <img
-                  src="/src/assets/images/delxus_logo_original.svg"
+                  src={delxusLogoSvg}
                   alt="Logotipo oficial da marca DELXUS"
                   className="h-full w-full object-contain"
                 />

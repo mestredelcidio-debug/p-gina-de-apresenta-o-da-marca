@@ -1,4 +1,7 @@
 import { Game } from '../types';
+import cacaPalavrasIcon from '../assets/images/caca_palavras_icon_1790822376258.jpg';
+import cacaPalavrasKeyart from '../assets/images/caca_palavras_keyart_1790822366240.jpg';
+import cacaPalavrasScreenshot from '../assets/images/caca_palavras_screenshot_1790822386482.jpg';
 
 export const gamesData: Game[] = [
   {
@@ -11,11 +14,11 @@ export const gamesData: Game[] = [
     fullDescription: 'Caça-Palavras: Universo das Palavras é um jogo pensado para relaxar a mente e ao mesmo tempo exercitar o raciocínio. Com mecânicas fluidas, design agradável e progressão equilibrada, cada partida convida você a explorar constelações de letras e descobrir palavras escondidas com conforto visual e jogabilidade intuitiva em dispositivos móveis.',
     platform: 'Android',
     status: 'Disponível',
-    iconUrl: '/src/assets/images/caca_palavras_icon_1790822376258.jpg',
-    keyArtUrl: '/src/assets/images/caca_palavras_keyart_1790822366240.jpg',
+    iconUrl: cacaPalavrasIcon,
+    keyArtUrl: cacaPalavrasKeyart,
     screenshots: [
-      '/src/assets/images/caca_palavras_screenshot_1790822386482.jpg',
-      '/src/assets/images/caca_palavras_keyart_1790822366240.jpg',
+      cacaPalavrasScreenshot,
+      cacaPalavrasKeyart,
     ],
     features: [
       'Dezenas de temas e categorias ricas em vocabulário em português',

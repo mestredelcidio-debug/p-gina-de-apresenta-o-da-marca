@@ -2,6 +2,7 @@ import React from 'react';
 import { BrandInfo } from '../types';
 import { Shield, Sparkles, Gamepad2 } from 'lucide-react';
 import { BrandName } from './BrandName';
+import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
 
 interface FooterProps {
   brand: BrandInfo;
@@ -28,7 +29,7 @@ export const Footer: React.FC<FooterProps> = ({ brand, onNavigate }) => {
             >
               <div className="h-10 w-10 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-md shadow-red-600/30 group-hover:scale-105 transition-transform duration-300">
                 <img
-                  src="/src/assets/images/delxus_emblem_original.svg"
+                  src={delxusEmblemSvg}
                   alt="Logotipo oficial DELXUS"
                   className="h-full w-full object-contain"
                 />

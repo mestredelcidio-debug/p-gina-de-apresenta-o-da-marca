@@ -1,6 +1,7 @@
 import React from 'react';
 import { Gamepad2, ArrowLeft, Compass, Sparkles } from 'lucide-react';
 import { BrandName } from './BrandName';
+import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
 
 interface NotFoundPageProps {
   onGoHome: () => void;
@@ -13,9 +14,9 @@ export const NotFoundPage: React.FC<NotFoundPageProps> = ({ onGoHome }) => {
         {/* Visual Gamer Badge with official logo */}
         <div className="relative mx-auto h-24 w-24 rounded-2xl bg-black border border-red-500/50 shadow-2xl shadow-red-950/50 p-2 flex items-center justify-center">
           <img
-            src="/src/assets/images/delxus_logo_official_1790824285866.jpg"
+            src={delxusEmblemSvg}
             alt="Logotipo DELXUS"
-            className="h-full w-full object-cover rounded-xl"
+            className="h-full w-full object-contain rounded-xl"
           />
           <div className="absolute -top-2 -right-2">
             <span className="font-mono text-xs font-bold bg-red-600 text-white px-2 py-0.5 rounded-full shadow">

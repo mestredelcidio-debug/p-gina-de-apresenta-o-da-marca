@@ -1,4 +1,5 @@
 import React from 'react';
+import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
 
 interface BrandNameProps {
   className?: string;
@@ -20,7 +21,7 @@ export const BrandName: React.FC<BrandNameProps> = ({
       {withEmblem && (
         <span className="inline-block h-4 w-4 rounded overflow-hidden border border-red-500/50 bg-black shrink-0 relative top-[-1px]">
           <img
-            src="/src/assets/images/delxus_emblem_original.svg"
+            src={delxusEmblemSvg}
             alt="Emblema oficial DELXUS"
             className="h-full w-full object-contain"
           />

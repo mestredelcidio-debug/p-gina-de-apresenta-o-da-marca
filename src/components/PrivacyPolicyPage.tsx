@@ -2,6 +2,7 @@ import React from 'react';
 import { BrandInfo } from '../types';
 import { Shield, ArrowLeft, Lock, FileText, CheckCircle, Mail } from 'lucide-react';
 import { BrandName } from './BrandName';
+import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
 
 interface PrivacyPolicyPageProps {
   brand: BrandInfo;
@@ -28,7 +29,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ brand, onB
           <div className="flex items-center gap-3 mb-4">
             <div className="h-12 w-12 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-lg shadow-red-950/40 shrink-0">
               <img
-                src="/src/assets/images/delxus_emblem_original.svg"
+                src={delxusEmblemSvg}
                 alt="Logotipo oficial DELXUS"
                 className="h-full w-full object-contain"
               />

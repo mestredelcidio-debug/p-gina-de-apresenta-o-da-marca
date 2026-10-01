@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { BrandInfo } from '../types';
 import { Settings2, X, RotateCcw, Check, Copy } from 'lucide-react';
 import { BrandName } from './BrandName';
+import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
+import delxusLogoSvg from '../assets/images/delxus_logo_original.svg';
 
 interface BrandConfigDrawerProps {
   brand: BrandInfo;
@@ -33,9 +35,9 @@ export const BrandConfigDrawer: React.FC<BrandConfigDrawerProps> = ({
       >
         <div className="h-4 w-4 rounded overflow-hidden border border-red-500/50 bg-black shrink-0">
           <img
-            src="/src/assets/images/delxus_logo_official_1790824285866.jpg"
+            src={delxusEmblemSvg}
             alt="DELXUS Logo"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-contain"
           />
         </div>
         <span className="hidden sm:inline">Personalizar Dados da Marca</span>
@@ -51,9 +53,9 @@ export const BrandConfigDrawer: React.FC<BrandConfigDrawerProps> = ({
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-md shadow-red-950/40 shrink-0">
                     <img
-                      src="/src/assets/images/delxus_logo_official_1790824285866.jpg"
+                      src={delxusLogoSvg}
                       alt="Logotipo oficial DELXUS"
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-contain"
                     />
                   </div>
                   <div>

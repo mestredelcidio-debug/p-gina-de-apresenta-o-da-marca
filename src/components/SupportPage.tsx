@@ -14,6 +14,7 @@ import {
   ArrowLeft,
 } from 'lucide-react';
 import { BrandName } from './BrandName';
+import delxusEmblemSvg from '../assets/images/delxus_emblem_original.svg';
 
 interface SupportPageProps {
   brand: BrandInfo;
@@ -127,7 +128,7 @@ export const SupportPage: React.FC<SupportPageProps> = ({
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="mx-auto mb-4 h-12 w-12 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-lg shadow-red-950/40">
             <img
-              src="/src/assets/images/delxus_emblem_original.svg"
+              src={delxusEmblemSvg}
               alt="Logotipo DELXUS Suporte"
               className="h-full w-full object-contain"
             />
