@@ -1,0 +1,6 @@
+{
+  "name": "DELXUS | Estúdio de Jogos",
+  "description": "DELXUS é um estúdio de jogos digitais dedicado à criação de experiências divertidas, criativas e envolventes para jogadores.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
