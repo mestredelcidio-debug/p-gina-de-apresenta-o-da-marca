@@ -20,9 +20,9 @@ export const BrandName: React.FC<BrandNameProps> = ({
       {withEmblem && (
         <span className="inline-block h-4 w-4 rounded overflow-hidden border border-red-500/50 bg-black shrink-0 relative top-[-1px]">
           <img
-            src="/src/assets/images/delxus_logo_official_1790824285866.jpg"
-            alt="Emblema DELXUS"
-            className="h-full w-full object-cover"
+            src="/src/assets/images/delxus_emblem_original.svg"
+            alt="Emblema oficial DELXUS"
+            className="h-full w-full object-contain"
           />
         </span>
       )}

@@ -86,11 +86,11 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ brand }) => {
 
             {/* Logo feature banner */}
             <div className="p-4 rounded-xl border border-red-500/20 bg-gradient-to-r from-red-950/30 via-black/40 to-transparent flex items-center gap-4">
-              <div className="h-14 w-14 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-lg shadow-red-900/30 shrink-0">
+              <div className="h-16 w-16 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-lg shadow-red-900/30 shrink-0 p-1">
                 <img
-                  src="/src/assets/images/delxus_logo_official_1790824285866.jpg"
-                  alt="Logotipo oficial DELXUS"
-                  className="h-full w-full object-cover"
+                  src="/src/assets/images/delxus_logo_original.svg"
+                  alt="Logotipo oficial da marca DELXUS"
+                  className="h-full w-full object-contain"
                 />
               </div>
               <div className="text-xs">
@@ -98,7 +98,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ brand }) => {
                   Logotipo Oficial da Marca
                 </span>
                 <span className="text-slate-400">
-                  O emblema flamejante simboliza a paixão, energia e determinação da <BrandName className="text-xs">DELXUS</BrandName> em cada projeto.
+                  O emblema flamejante original simboliza a paixão, energia e determinação da <BrandName className="text-xs">DELXUS</BrandName> em cada projeto.
                 </span>
               </div>
             </div>

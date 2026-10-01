@@ -51,9 +51,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate }) => {
           >
             <div className="h-9 w-9 sm:h-10 sm:w-10 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-md shadow-red-600/30 group-hover:scale-105 group-hover:border-red-400 transition-all duration-300">
               <img
-                src="/src/assets/images/delxus_logo_official_1790824285866.jpg"
+                src="/src/assets/images/delxus_emblem_original.svg"
                 alt="Logotipo oficial DELXUS"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
               />
             </div>
             <span className="font-display text-2xl sm:text-3xl font-extrabold tracking-wider bg-gradient-to-r from-red-500 via-rose-500 to-amber-500 bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(239,68,68,0.5)] group-hover:brightness-110 transition-all">

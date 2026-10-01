@@ -4,30 +4,37 @@ interface BrandLogoProps {
   className?: string;
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   showText?: boolean;
+  variant?: 'emblem' | 'full';
 }
 
 export const BrandLogo: React.FC<BrandLogoProps> = ({
   className = '',
   size = 'md',
   showText = false,
+  variant = 'emblem',
 }) => {
   const sizeMap = {
     xs: 'h-6 w-6',
     sm: 'h-8 w-8',
     md: 'h-10 w-10',
     lg: 'h-14 w-14',
-    xl: 'h-20 w-20',
+    xl: 'h-24 w-24',
   };
+
+  const logoSrc =
+    variant === 'full'
+      ? '/src/assets/images/delxus_logo_original.svg'
+      : '/src/assets/images/delxus_emblem_original.svg';
 
   return (
     <div className={`inline-flex items-center gap-2.5 ${className}`}>
       <div
-        className={`relative ${sizeMap[size]} shrink-0 rounded-xl overflow-hidden border border-red-500/40 bg-black shadow-lg shadow-red-600/20 group-hover:border-red-500 transition-all duration-300`}
+        className={`relative ${sizeMap[size]} shrink-0 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-lg shadow-red-600/30 group-hover:border-red-400 group-hover:scale-105 transition-all duration-300`}
       >
         <img
-          src="/src/assets/images/delxus_logo_official_1790824285866.jpg"
-          alt="Logotipo oficial DELXUS com emblema em chamas"
-          className="h-full w-full object-cover"
+          src={logoSrc}
+          alt="Logotipo oficial da marca DELXUS"
+          className="h-full w-full object-contain"
         />
         <div
           aria-hidden="true"
@@ -43,3 +50,4 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     </div>
   );
 };
+

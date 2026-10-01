@@ -28,9 +28,9 @@ export const Footer: React.FC<FooterProps> = ({ brand, onNavigate }) => {
             >
               <div className="h-10 w-10 rounded-xl overflow-hidden border border-red-500/50 bg-black shadow-md shadow-red-600/30 group-hover:scale-105 transition-transform duration-300">
                 <img
-                  src="/src/assets/images/delxus_logo_official_1790824285866.jpg"
+                  src="/src/assets/images/delxus_emblem_original.svg"
                   alt="Logotipo oficial DELXUS"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-contain"
                 />
               </div>
               <BrandName className="text-2xl font-display font-extrabold tracking-wider">
